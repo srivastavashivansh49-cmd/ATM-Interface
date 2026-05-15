@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fbe7c6, #b4f8c8, #a0e7e5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.page {
+  width: 100%;
+  max-width: 480px;
+}
+
+.atm-card {
+  background: #fffdf7;
+  border: 3px solid #222;
+  border-radius: 22px;
+  padding: 25px;
+  box-shadow: 10px 10px 0 #222;
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.mini-title {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+h1 {
+  font-size: 34px;
+  color: #222;
+}
+
+.chip {
+  width: 55px;
+  height: 40px;
+  background: #ffd166;
+  border: 2px solid #222;
+  border-radius: 8px;
+  box-shadow: inset 0 0 0 3px #f4a261;
+}
+
+.screen {
+  background: #202124;
+  color: white;
+  border-radius: 16px;
+  padding: 24px;
+  text-align: center;
+  margin-bottom: 22px;
+  border: 3px solid #111;
+}
+
+.screen-label {
+  color: #b7f7d4;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+#balance {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+#message {
+  color: #f7e7a9;
+  font-size: 15px;
+}
+
+.input-area {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+input {
+  width: 100%;
+  padding: 14px;
+  border: 2px solid #222;
+  border-radius: 12px;
+  font-size: 18px;
+  outline: none;
+  background: #fff;
+}
+
+input:focus {
+  background: #fff8dc;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+button {
+  padding: 14px;
+  border: 2px solid #222;
+  border-radius: 12px;
+  background: #7bdff2;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 4px 4px 0 #222;
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translate(3px, 3px);
+  box-shadow: 1px 1px 0 #222;
+}
+
+.exit {
+  background: #ffadad;
+}
+
+.note {
+  margin-top: 22px;
+  padding: 12px;
+  background: #fef3c7;
+  border: 2px dashed #222;
+  border-radius: 12px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+@media (max-width: 500px) {
+  .atm-card {
+    padding: 18px;
+    box-shadow: 6px 6px 0 #222;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  #balance {
+    font-size: 32px;
+  }
+
+  .buttons {
+    grid-template-columns: 1fr;
+  }
+}
